@@ -8,7 +8,7 @@ const NavLinks = ({heading,text}) => {
                 <h4 className='text-[.85rem] font-bold'>{heading}</h4>
                 <FiArrowUpRight className='mt-[.05rem]' />
             </div>
-            <p className=' mt-0.5 text-[.5rem]  '>
+            <p className=' mt-0.5 text-[.55rem]  '>
                 {text}
             </p>
         </div>
