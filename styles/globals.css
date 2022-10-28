@@ -1,16 +1,36 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 * {
   box-sizing: border-box;
+}
+
+@layer base{
+  body{
+    @apply m-0 p-0 bg-white min-h-[100vh] font-montserrat;
+  }
+}
+
+@layer components{
+  .circle{
+    @apply h-[400px] w-[400px] bg-orange-500 rounded-full;
+  }
+  .transitionAll{
+    @apply transition-all duration-200;
+  }
+  .navlink{
+    @apply w-[140px] relative cursor-pointer transitionAll
+      before:content-[''] before:w-full before:absolute before:-top-0.5  before:bg-black before:h-[2px] before:transitionAll hover:before:w-0 
+      after:content-[''] after:w-0 after:absolute after:-bottom-[.40rem] after:bg-black after:h-[2px] after:transitionAll hover:after:w-full ;
+    }
+  .circleButton{
+    @apply mt-auto relative transitionAll hover:scale-75
+    before:content-[''] before:h-0 hover:before:h-[190px] before:transitionAll before:w-[1px] before:bg-black before:rotate-[30deg] before:absolute;  
+  }
+  /* .navlink:after{
+    @apply w-full absolute bg-black h-2 top-0 content-none
+  } */
+
 }
