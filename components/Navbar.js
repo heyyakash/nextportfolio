@@ -21,7 +21,7 @@ const Navbar = () => {
     }
     return (
         <nav className={` flex h-[80px]  md:h-[80px] z-[100] items-center ${show ? "bg-white/70 dark:bg-black " : ""} md:bg-transparent md:items-start md:pt-5 justify-between overflow-hidden`}>
-            <div className='text-sm ml-3 md:ml-0 flex leading-[.85rem] flex-col font-[700]'>
+            <div className='text-sm ml-3 md:ml-0 font-montserrat flex leading-[.85rem] flex-col font-[700]'>
                 <p>Akash <sup className='text-[.5rem] bg-gradient-to-t dark:bg-gradient-to-r from-[#12c2e9] via-[#c471ed] to-[#f64f59] bg-clip-text text-transparent'>TM</sup></p>
                 <p>Sharma.</p>
             </div>
