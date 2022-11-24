@@ -9,10 +9,12 @@
 
 @layer base{
   *{
-    @apply box-border;
+    @apply box-border dark:text-white;
+  }
+  html{
   }
   body{
-    @apply m-0 p-0 overflow-hidden w-full bg-white min-h-[100vh] font-montserrat;
+    @apply m-0 p-0  w-full bg-white min-h-[100vh] font-montserrat;
   }
 }
 
@@ -24,16 +26,29 @@
     @apply transition-all duration-200;
   }
   .navlink{
-    @apply w-full md:w-[140px] relative cursor-pointer transitionAll
-      before:content-[''] before:w-full before:absolute before:-top-0.5  before:bg-black before:h-[2px] before:transitionAll hover:before:w-0 
-      after:content-[''] after:w-0 after:absolute after:-bottom-[.40rem] after:bg-black after:h-[2px] after:transitionAll hover:after:w-full ;
+    @apply w-full md:w-[100px] relative cursor-pointer transitionAll  dark:text-white
+      before:content-[''] before:w-full before:absolute before:-top-[2px] before:bg-black before:dark:bg-gradient-to-l before:h-[2px] before:transitionAll hover:before:w-0 
+      after:content-[''] after:w-0 after:absolute after:-bottom-[2px] after:bg-black after:dark:bg-gradient-to-r from-[#12c2e9] via-[#c471ed] to-[#f64f59] after:h-[2px] after:transitionAll hover:after:w-full ;
     }
   .circleButton{
     @apply mt-auto relative transitionAll hover:scale-75
     before:content-[''] before:h-0 hover:before:h-[190px] before:transitionAll before:w-[1px] before:bg-black before:rotate-[30deg] before:absolute;  
   }
-  /* .navlink:after{
-    @apply w-full absolute bg-black h-2 top-0 content-none
-  } */
+  .background-animate{
+    background-size: 400%;
+    -webkit-animation: AnimationName 7s ease infinite;
+    -moz-animation: AnimationName 7s ease infinite;
+    animation: AnimationName 7s ease infinite;
+  }
+}
 
+
+@keyframes AnimationName {
+  0%,
+  100% {
+    background-position: 0% 70%;
+  }
+  50% {
+    background-position: 100% 30%;
+  }
 }

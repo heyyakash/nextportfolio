@@ -4,22 +4,15 @@ import {FaLinkedinIn} from 'react-icons/fa'
 
 const Hero = () => {
   return (
-    <div className='w-full h-[50vh]  relative  mt-[7rem] flex justify-between items-center'>
-      <div className=' text-sm  absolute -left-[3rem] -rotate-90   '>
-        <p className='inline'>Follow</p>
-      <BsTwitter className=' ml-5 inline  rotate-90' />
-      <FaLinkedinIn className='ml-3 rotate-90 inline' />
+    <div className='md:h-[250px] md:mt-10 mt-5 w-full flex items-center flex-col-reverse md:flex-row pl-6 gap-10 md:gap-0 md:p-0 justify-between'>
+      <div className='flex flex-col h-full items-start'>
+        <h2 className='text-[3.75rem] md:text-[3.75rem] leading-[4rem] md:leading-[3.5rem] bg-gradient-to-r  background-animate from-[#129ee9] via-[#c471ed] to-orange-500 bg-clip-text font-[650] text-transparent'>Akash Sharma</h2>
+        <p className='dark:text-white text-lg font-[500]'>A Web Developer</p>
+        <p className='mt-6 text-gray-700 dark:text-gray-300 text-lg'>-Accepts bribes in form of sweets</p>
+        <p className='text-gray-700 dark:text-gray-300 text-lg'>-Madridista &#129293;</p>
       </div>
-      <div className='flex ml-10 gap-[14rem] relative flex-[.7] flex-col'>
-        <p className='text-sm'>A Web Developer</p>
-        <h1 className='text-[7rem] absolute mt-7 z-[100] leading-[7rem] '>
-          Akash<br />Sharma.
-        </h1>
-        {/* <p className='mt-7 text-xs'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, accusamus? Repudiandae enim blanditiis officiis libero quod. Perferendis provident perspiciatis totam sequi ipsam vel est voluptas velit voluptatem, nesciunt, reprehenderit voluptates?</p> */}
-        <div className='mt-8 ml-3 cursor-pointer circleButton flex justify-center items-center w-[160px] h-[160px] rounded-full font-extrabold border-[1px] border-black '>Let's Talk</div>
-      </div>
-      <div className='flex-1 mt-[5rem] h-[100%] w-[600px] '>
-        <img src="/mine.jpg" alt="image" className='object-cover hover:translate-x-2 hover:-translate-y-2 transition-all duration-[400ms.] h-[100%]' />
+      <div className='h-24 md:h-[180px] w-24 md:w-[180px] self-start overflow-hidden rounded-full bg-white'>
+        <img src="/mine4.jpg" className='w-full h-full object-cover' alt="profile" />
       </div>
     </div>
   )

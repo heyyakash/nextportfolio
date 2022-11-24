@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import Container from '../components/Container';
-import { useEffect,useState } from 'react';
+import { useEffect,useState,useLayoutEffect } from 'react';
 import { Background } from '../components/Background';
 
 export default function Home() {
@@ -10,22 +10,33 @@ export default function Home() {
     height:null
   })
   const [height,setHeight] = useState(null)  // const bodyRef = useCallback(node=>{
-    //   if(node!==null){
-    //     setWidth(node.clientWidth)
-    //     // console.log(node.clientWidth)
-    //   }
-    // },[])
+  const [loading,setLoading] = useState(true)
 
   useEffect(()=>{
     setDimension({width:window.innerWidth,height:window.innerHeight})
     window.addEventListener('resize',handleResize,false)
   },[])
 
+  useEffect(()=>{
+    const mode = localStorage.getItem(mode)
+    if(!mode || mode==='dark'){
+      document.documentElement.classList.add('dark')
+      localStorage.setItem('mode','dark')
+    }
+    setLoading(false)
+  })
+
   const handleResize = ()=>{
     setDimension({width:window.innerWidth,height:window.innerHeight})
-    // console.log(window.innerWidth,window.innerHeight)
+    console.log(window.innerWidth,window.innerHeight)
   }
-
+  if(loading){
+    return(
+      <div className='h-[100vh] w-full grid place-items-center'>
+        <img src = "/loading.gif" className='w-[50px] h-[50px]' alt = "loading" />
+      </div>
+    )
+  }
   return (
     <div>
       <Head>
@@ -35,7 +46,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className='relative'>
+      <main className='relative min-h-[100vh]'>
         <Background dimension = {dimension} />
         <Container />
       </main>
