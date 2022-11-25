@@ -1,9 +1,9 @@
 import React from 'react'
 import {FiArrowUpRight} from 'react-icons/fi'
 
-const NavLinks = ({heading,text}) => {
+const NavLinks = ({heading,text,link}) => {
     return (
-        <div className='navlink'>
+        <a href = {link} className='navlink'>
             <div className='flex justify-between'>
                 <h4 className='text-[.85rem] font-bold'>{heading}</h4>
                 <FiArrowUpRight className='mt-[.05rem]' />
@@ -11,7 +11,7 @@ const NavLinks = ({heading,text}) => {
             {/* <p className=' mt-0.5 text-[.55rem]  '>
                 {text}
             </p> */}
-        </div>
+        </a>
     )
 }
 

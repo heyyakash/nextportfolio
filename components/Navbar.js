@@ -26,10 +26,10 @@ const Navbar = () => {
                 <p>Sharma.</p>
             </div>
             <div className={`flex  md:ml-auto md:mr-3  gap-6 z-[100] backdrop-blur-2xl md:backdrop-blur-none absolute md:relative flex-col md:flex-row bg-white/70 dark:bg-black/60  dark:md:bg-transparent md:bg-transparent w-full md:w-auto ${show ? 'top-[80px]' : 'top-[-1000%]'} transitionAll duration-500 md:top-0 h-[calc(100vh-80px)] md:h-auto p-3 md:p-0`}>
-                <NavLinks heading="Home" text="The most comfortable place in the world" />
-                <NavLinks heading="About Me" text="Wanna do great stuff and learn everyday" />
-                <NavLinks heading="Projects" text="Applied my knowledge and made people happy" />
-                <NavLinks heading="Contact Me" text="Lets meet, chat , have coffee and fun" />
+                <NavLinks heading="Home" link = {"#home"} text="The most comfortable place in the world" />
+                <NavLinks heading="Skills" link = {'#skills'} text="Wanna do great stuff and learn everyday" />
+                <NavLinks heading="Projects" link = {'#projects'} text="Applied my knowledge and made people happy" />
+                <NavLinks heading="Contact Me" link = {"#contact"} text="Lets meet, chat , have coffee and fun" />
                 
 
             </div>
