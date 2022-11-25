@@ -21,9 +21,9 @@ const Card = ({ post, icon, iconText, type, height, children, style }) => {
     }, []);
 
     return (
-        <div ref={boxRef} style={{ height }} className={`relative ${type === "Container" ? "w-full" : ""} p-[.7px] grid place-items-center overflow-hidden mt-4 rounded-xl`} onMouseEnter={() => setShow(true)} onMouseLeave={() => setShow(false)}>
+        <div ref={boxRef} style={{ height }} className={`relative ${type === "Container" ? "w-full" : ""} p-[.5px]  grid place-items-center overflow-hidden mt-4 rounded-xl`} onMouseEnter={() => setShow(true)} onMouseLeave={() => setShow(false)}>
 
-            <div style={{ top: mousePos?.y?.toString() + 'px', left: mousePos?.x?.toString() + 'px' }} className={`absolute ${show ? "" : "hidden"} rounded-full h-[150px] w-[150px] bg-gradient-to-br from-[#c471f2] to-[#028cf3]`}></div>
+            <div style={{ top: mousePos?.y?.toString() + 'px', left: mousePos?.x?.toString() + 'px' }} className={`absolute ${show ? "" : "hidden"} rounded-full h-[120px] w-[120px] bg-gradient-to-br from-[#c471f2] to-[#028cf3]`}></div>
             {type === "Normal" ?
                 (<>
                     <div className='bg-white/80 font-rubik grid place-items-center dark:bg-black/30  w-full cursor-pointer h-full relative backdrop-blur-[70px]  p-4 transition-all drop-shadow-lg rounded-xl'>
@@ -38,7 +38,7 @@ const Card = ({ post, icon, iconText, type, height, children, style }) => {
 
             {type === "Blog" ? (<>
                 <a href={post?.link ? post?.link : "#"} target={!post ? "" : "_blank"} rel="noopenner noreferrer" className='bg-white/80 font-rubik dark:bg-black/30 flex flex-col w-full cursor-pointer h-full relative backdrop-blur-[70px]  p-4 transition-all drop-shadow-lg rounded-xl'>
-                    <h1 className='text-2xl font-[500]'>{post?.title && post?.title}</h1>
+                    <h1 className='text-xl md:text-2xl font-[500]'>{post?.title && post?.title}</h1>
                     <p className='mt-auto'>{post?.pubDate && post?.pubDate?.split(' ')[0]}</p>
                 </a>
             </>) : (<></>)}

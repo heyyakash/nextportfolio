@@ -48,6 +48,9 @@
   .inputContainer::after{
     @apply w-full absolute bottom-1 h-[1px] background-animate bg-black content-[''] dark:bg-gradient-to-r from-[#12c2e9] via-[#c471ed] to-[#f64f59]; 
   }
+  .gitprofile{
+    @apply absolute top-[50%] left-[50%] drop-shadow-xl -translate-x-[50%] -translate-y-[50%] w-16 h-16 rounded-full;
+  }
   .background-animate{
     background-size: 200%;
     -webkit-animation: AnimationName 5s ease infinite;

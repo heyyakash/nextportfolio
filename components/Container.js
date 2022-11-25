@@ -15,7 +15,7 @@ const Container = () => {
             <Hero />
             <BlogSnip />
             <Skills />  
-            {/* <Projects /> */}
+            <Projects />
             <Contact />
             <Footer />
         </div>

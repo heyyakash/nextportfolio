@@ -5,7 +5,8 @@ import {AiFillGithub} from 'react-icons/ai'
 
 const Hero = () => {
   return (
-    <section id ="home" className='md:h-[250px] md:mt-10 mt-5 w-full flex items-center flex-col-reverse md:flex-row pl-6 gap-10 md:gap-0 md:p-0 justify-between'>
+    <section id ="home" className='w-full relative z-0 min-h-[400px]'>
+      <div className='md:h-[250px] pt-[8rem] md:pt-[10rem] w-full flex items-center flex-col-reverse md:flex-row pl-6 gap-10 md:gap-0 md:p-0 justify-between'>
       <div className='flex flex-col h-full'>
         <h2 className='text-[3.75rem] md:text-[3.75rem] leading-[4rem] md:leading-[3.5rem] bg-gradient-to-l  background-animate from-[#ff1b1b] via-[#c471ed] to-[#45caff] bg-clip-text font-[600] font-montserrat text-transparent'>Akash Sharma.</h2>
         <p className='dark:text-white text-lg font-[500]'>A Web Developer</p>
@@ -19,6 +20,7 @@ const Hero = () => {
       </div>
       <div className='h-24 md:h-[180px] w-24 md:w-[180px] self-start overflow-hidden rounded-full bg-white'>
         <img src="/mine4.jpg" className='w-full h-full object-cover' alt="profile" />
+      </div>
       </div>
 
     </section>

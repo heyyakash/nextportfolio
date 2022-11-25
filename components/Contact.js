@@ -9,6 +9,13 @@ const Contact = () => {
     const [success,setSuccess] = useState(false)
     const [error,setError] = useState(false)
     const[process,setProcess] = useState(false)
+
+    const clear = () => {
+        setName("")
+        setEmail("")
+        setMessage("")
+    }
+
     const sendEmail = async (e) => {
         e.preventDefault()
         setProcess(true)
@@ -26,7 +33,7 @@ const Contact = () => {
                 setError(false)
             }, 10000);
         }
-
+        clear()
     }
 
     return (
@@ -57,7 +64,7 @@ const Contact = () => {
                 </form>
                 </Card>
                 <Card type = "Container" style ={"backdrop-blur-[20px] dark:backdrop-blur-[40px] cursor-none"}>
-                    <p className='font-[500]'>Find me</p>
+                    <p className='font-[500]'>Find me <span className='text-xs md:hidden'>(hint: Try clicking)</span></p>
                     <img src="/stencil.png" className='h-[342px] object-cover invert dark:invert-0 opacity-50 dark:opacity-20' alt="" />
                 </Card>
             </div>
