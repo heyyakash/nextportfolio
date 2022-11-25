@@ -9,9 +9,9 @@ const Projects = () => {
         <section id="projects" className='mt-12 px-6 flex flex-col md:px-0'>
             <h2 className='text-2xl font-[600]'>Selected Projects</h2>
             <div className='mt-3 grid md:grid-cols-3 grid-rows-4 grid-cols-1 gap-6 md:grid-rows-2'>
-                {data.map((file) => {
+                {data.map((file,index) => {
                     return (
-                        <Card type="Container">
+                        <Card key = {index} type="Container">
                             <div className='h-[280px] relative flex flex-col'>
                                 <img src={file?.Image} alt="image" className='w-full h-[138px] rounded-sm outline-dotted  outline-offset-4 outline-black  dark:outline-white/30' />
                                 <a rel ="noopener noreferrer" href="https://github.com/heyyakash"><img src={file?.AVATAR} alt = "githubprofile" className='gitprofile' />

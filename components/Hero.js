@@ -13,9 +13,9 @@ const Hero = () => {
         <p className='mt-5 text-gray-700 dark:text-gray-300 text-lg'>-Accepts bribes in form of sweets</p>
         <p className='text-gray-700 dark:text-gray-300 text-lg'>-Madridista &#129293;</p>
         <div className='flex mt-2 gap-[.1rem]'>
-          <a href="https://www.twitter.com/heyyakash" rel = "noopenner norefferer" target = "_blank" className='text-xl hover:text-white p-1 hover:bg-gray-700 rounded-lg transitionAll '><IoLogoTwitter /></a>
-          <a href="https://www.linkedin.com/in/akash-sharma-a3536519a" rel = "noopenner norefferer" target = "_blank" className='text-xl hover:text-white p-1 hover:bg-gray-700 rounded-lg transitionAll'><FaLinkedinIn /></a>
-          <a href="https://github.com/heyyakash" rel = "noopenner norefferer" target = "_blank" className='text-xl hover:text-white p-1 hover:bg-gray-700 rounded-lg transitionAll'><AiFillGithub /></a>
+          <a href="https://www.twitter.com/heyyakash" rel="noreferrer" target = "_blank" className='text-xl hover:text-white p-1 hover:bg-gray-700 rounded-lg transitionAll '><IoLogoTwitter /></a>
+          <a href="https://www.linkedin.com/in/akash-sharma-a3536519a" rel="noreferrer" target = "_blank" className='text-xl hover:text-white p-1 hover:bg-gray-700 rounded-lg transitionAll'><FaLinkedinIn /></a>
+          <a href="https://github.com/heyyakash" rel="noreferrer" target = "_blank" className='text-xl hover:text-white p-1 hover:bg-gray-700 rounded-lg transitionAll'><AiFillGithub /></a>
         </div>
       </div>
       <div className='h-24 md:h-[180px] w-24 md:w-[180px] self-start overflow-hidden rounded-full bg-white'>
