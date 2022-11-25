@@ -20,7 +20,7 @@ export const Background = ({ dimension }) => {
                 </div>
                 <div className={`w-full h-full backdrop-blur-[170px] bg-white/60 dark:bg-white/[.05] z-10 flex gap-[200px]`}>
                     {
-                        [...Array(number)].map(() => <span className={`h-[${height}px] w-[.75px] bg-black/10 dark:bg-white/[.08]`}></span>)
+                        [...Array(number)].map((n) => <span key = {n} className={`h-[${height}px] w-[.75px] bg-black/10 dark:bg-white/[.08]`}></span>)
                     }
                 </div>
             </div>
