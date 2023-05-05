@@ -21,7 +21,7 @@ const Skills = () => {
         <Card type = "Normal" height = "200px" icon = {<FaReact className='text-[3rem]' />} iconText = "ReactJS" />
         <Card type = "Normal" height = "200px" icon = {<SiTailwindcss className='text-[3rem]' />} iconText = "TailwindCSS" />
         <Card type = "Normal" height = "200px" icon = {<TbBrandNextjs className='text-[3rem]' />} iconText = "NextJS" />
-        <Card type = "Normal" height = "200px" icon = {<IoLogoNodejs className='text-[3rem]' />} iconText = "NextJS" />
+        <Card type = "Normal" height = "200px" icon = {<IoLogoNodejs className='text-[3rem]' />} iconText = "NodeJS" />
         <Card type = "Normal" height = "200px" icon = {<DiMongodb className='text-[3rem]' />} iconText = "MongoDB" />
       </div> 
     </section>
