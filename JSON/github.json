@@ -8,11 +8,11 @@
         "AVATAR": "https://avatars.githubusercontent.com/u/85030597?v=4"
     },
     {
-        "Name": "Invent",
-        "Link": "https://startup-lookup.vercel.app",
-        "About": "A Web App which helps investors and founders to find each other",
-        "GithubLink": "https://github.com/heyyakash/startup-lookup",
-        "Image":"https://ik.imagekit.io/qx5kklh3ls/Screenshot_2022-08-27_222028.png?ik-sdk-version=javascript-1.4.3&updatedAt=1669379125925",
+        "Name": "Full Stack Chat Application",
+        "Link": "https://fullstackchatapp.vercel.app/",
+        "About": "A stateless fullstack chat application written in NextJs and Go",
+        "GithubLink": "https://github.com/heyyakash/fullstackchatapp",
+        "Image":"https://ik.imagekit.io/qx5kklh3ls/af06673e-2ef0-4184-8f0a-73b8a210d45b.avif?updatedAt=1683265209827",
         "AVATAR": "https://avatars.githubusercontent.com/u/85030597?v=4"
     },
     {
@@ -24,11 +24,11 @@
         "AVATAR": "https://avatars.githubusercontent.com/u/85030597?v=4"
     },
     {
-        "Name": "MERN Task Manager App",
-        "Link": "https://merntodoapp.vercel.app/",
-        "About": "A web app that allows people to manage their tasks.",
-        "GithubLink": "https://github.com/heyyakash/taskmanagerapp",
-        "Image":"https://ik.imagekit.io/qx5kklh3ls/port4.png?ik-sdk-version=javascript-1.4.3&updatedAt=1669379179127",
+        "Name": "Progressify",
+        "Link": "https://progressify.vercel.app/",
+        "About": "Progressify is a Project Management tool that automates task allotment",
+        "GithubLink": "https://github.com/heyyakash/ProjectMgmt",
+        "Image":"https://ik.imagekit.io/qx5kklh3ls/fec3abd1-6078-43c9-b3cc-43fa5a086ec6.avif?updatedAt=1683265113414",
         "AVATAR": "https://avatars.githubusercontent.com/u/85030597?v=4"
     }
 ]
