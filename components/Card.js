@@ -37,9 +37,9 @@ const Card = ({ post, icon, iconText, type, height, children, style }) => {
                 </>)}
 
             {type === "Blog" ? (<>
-                <a href={post?.link ? post?.link : "#"} target={!post ? "" : "_blank"} rel="noopenner noreferrer" className='bg-white/80 font-rubik dark:bg-black/30 flex flex-col w-full cursor-pointer h-full relative backdrop-blur-[70px]  p-4 transition-all drop-shadow-lg rounded-xl'>
-                    <h1 className='text-xl md:text-2xl font-[500]'>{post?.title && post?.title}</h1>
-                    <p className='mt-auto'>{post?.pubDate && post?.pubDate?.split(' ')[0]}</p>
+                <a href={post?.slug ? "https://techbyakash.hashnode.dev/" +  post?.slug : "#"} target={!post ? "" : "_blank"} rel="noopenner noreferrer" className='bg-white/80 font-rubik dark:bg-black/30 flex flex-col w-full cursor-pointer h-full relative backdrop-blur-[70px]  p-4 transition-all drop-shadow-lg rounded-xl'>
+                    <h1 className='text-md md:text-md font-[500]'>{post?.title && post?.title}</h1>
+                    <p className='mt-auto'>{post?.dateAdded && post?.dateAdded?.split('T')[0]}</p>
                 </a>
             </>) : (<></>)}
 

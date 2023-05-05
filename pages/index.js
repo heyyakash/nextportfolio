@@ -28,7 +28,7 @@ export default function Home() {
 
   const handleResize = ()=>{
     setDimension({width:window.innerWidth,height:window.innerHeight})
-    console.log(window.innerWidth,window.innerHeight)
+    // console.log(window.innerWidth,window.innerHeight)
   }
   if(loading){
     return(
